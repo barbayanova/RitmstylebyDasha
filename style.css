@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Proxima Nova";
+    src: url();
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #162831;
+    width: 1280px;
+    margin: 0 auto;
+    font-family: "Proxima Nova", sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    color: white;
+}
+nav a {
+    color: white;
+}
+.addCurse {
+    background-color: #018ABE;
+    border-radius: 3px;
+    padding: 9px 15px;
+    font-size: 13px;
+}
+nav {
+    display: flex;
+    gap: 50px;
+}
+nav a,
+.addCurse {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: #0188be00 solid 2px;
+    transition: all .1s linear;
+}
+h2 {
+    font-family: ;
+}
