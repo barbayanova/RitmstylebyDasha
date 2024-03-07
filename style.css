@@ -72,7 +72,6 @@ nav a,
 h1, h2 {
     font-family: "El Messiri", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     color: white;
 }
@@ -207,3 +206,7 @@ h1, h2 {
     size: 14px;
     margin: 0px 60px 56px 60px;
     text-align: justify;}
+    
+    .control {
+        display: flex;
+    }
