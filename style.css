@@ -209,4 +209,6 @@ h1, h2 {
     
     .control {
         display: flex;
+        align-self: center;
+        margin: 60px ;
     }
