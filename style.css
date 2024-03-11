@@ -9,17 +9,25 @@ body {
     background-color: #162831;
     width: 1280px;
     margin: 0 auto;
-    font-family: "Proxima Nova", sans-serif;
 }
-header {
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(./font/proximanova_regular.ttf);
+}
+header, footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
     color: white;
+    font-family:"Proxima Nova";
 }
-nav a {
+a {
     color: white;
+    font-family:"Proxima Nova";
+}
+p {
+    font-family:"Proxima Nova";
 }
 .addCurse {
     background-color: #018ABE;
@@ -40,7 +48,7 @@ nav a,
     transition: all .1s linear;
 }
 .banner {
-    background-image: url(/img/unsplash_S-llxYh3GzI.svg);
+    background-image: url(./img/unsplash_S-llxYh3GzI.svg);
     background-size: 100%;
     height: 328px;
     width: 1024px;
@@ -68,8 +76,21 @@ nav a,
     font-weight: 700;
     text-align: center;
     margin: 0;
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 1s; /* Задержка перед началом */
 }
-h1, h2 {
+@keyframes show{
+    0%{
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+    }
+h1, h2, h3 {
     font-family: "El Messiri", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -107,7 +128,31 @@ h1, h2 {
     grid-row-gap: 24px;
     
     }
-    
+    .block_1:hover {
+    border: #ffffff solid 0.5px;
+    transition: all .1s linear;
+    filter: brightness(1.2)drop-shadow(0 0 0.75rem #018ABE);
+    }
+    .block_2:hover {
+    border: #ffffff solid 0.5px;
+    transition: all .1s linear;
+    filter: brightness(1.2)drop-shadow(0 0 0.75rem #018ABE);
+    }
+    .block_3:hover {
+        border: #ffffff solid 0.5px;
+        transition: all .1s linear;
+        filter: brightness(1.2)drop-shadow(0 0 0.75rem #018ABE);
+    }
+    .block_4:hover {
+        border: #ffffff solid 0.5px;
+        transition: all .1s linear;
+        filter: brightness(1.2)drop-shadow(0 0 0.75rem #018ABE);
+    }
+    .block_5:hover {
+        border: #ffffff solid 0.5px;
+        transition: all .1s linear;
+        filter: brightness(1.2)drop-shadow(0 0 0.75rem #018ABE);
+    }
     .block_1 { 
     grid-area: 1 / 1 / 3 / 2; 
     height: 540px;
@@ -125,9 +170,6 @@ h1, h2 {
         display: flex;
     align-items: end;
     border-radius: 10px;
-    
-
-    ;
     }
     .block_3 { grid-area: 1 / 3 / 2 / 4; 
         height: 258px;
@@ -190,6 +232,7 @@ h1, h2 {
     color: white;
     size: 16px;
     margin: 40px 45px 15px 45px;
+    font-family:"Proxima Nova";
 }
 .feed1 p {
     color: white;
@@ -201,6 +244,7 @@ h1, h2 {
     color: white;
     size: 20px;
     margin: 50px 60px 20px 60px;
+    font-family:"Proxima Nova";
 }
 .feed2 p {
     color: white;
@@ -225,30 +269,31 @@ h1, h2 {
     Height:1024px;
     display: flex;
     flex-wrap: wrap;
+    gap:100px;
 }
 .massage {
     display: flex;
     width: 1076px;
-    height:365px;
-    position: relative;
+    height: 365px;
+    position: reative;
     color: white;
 }
 .about .massage img {
     position: absolute;
     display: flex;
-    width: 426px;
-    height: 400px;
-    left:650px;
+    width: 526px;
+    height: 365px;
+    margin: 100px 0 500px 550px;
 }
 .about .massage h3 {
     width: 406px;
-    margin: 66px 143px 265px 0;
+    margin: 166px 143px 265px 0;
     font-size: 24px;
     position: absolute;
+    font-family:"Proxima Nova";
 }
-.about p {
-   margin: 130px 84px 65px 0;
-   font-family: ;
+.about .massage p {
+   margin: 230px 84px 165px 0;
     width:466px;
     font-size: 16px;
     text-align: justify;
@@ -267,15 +312,137 @@ h1, h2 {
 .about .hidro img {
         position: absolute;
         display: flex;
-        width: 426px;
-        height: 400px;
-        right: 650px;
+        width: 526px;
+        height: 365px;
+        right: 550px;
     }
-    .hidro p {
-        margin-right: 0px;
+    .about .hidro p {
+    font-family:"Proxima Nova";
+    width:466px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 22.4px;
+    position: absolute;
+    margin: 81px 0px 17px 84px;
     }
-    .about .hidro h3 {
-        width: 406px;
-        font-size: 24px;
-        position: absolute;
- margin: 30px 51px 30px 0px ;}
+
+.about .hidro h3 {
+    width: 466px;
+    font-size: 24px;
+    position: absolute;
+    margin: 17px 0 349px 0px ;
+    font-family:"Proxima Nova";
+}
+
+#price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 134px;
+    color: white;
+margin-top: 100px;
+}
+
+.price ul {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    width: 416px;
+    }
+.price li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:"Proxima Nova";
+    font-size: 18px;
+    font-weight: 400;
+}
+.price li::before {
+    content: url(/img/Rectangle\ 27.svg);
+    position: absolute;
+    margin-left: -40px;}
+.price span {
+    font-family:"El Messiri", sans-serif;
+    font-size: 18px;
+    line-height: 25.2px;
+}
+.price h3 {
+    font-family:"El Messiri", sans-serif;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 30px;
+}
+#mapandcontacts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1296px;
+    height: 604px;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.poll1 {
+background-color: rgba(1, 138, 190, 1);
+flex-direction: column;
+border-radius: 10px;
+display: flex;
+justify-content: start;
+gap:20px;
+padding: 35px 45px;
+
+}
+.poll2 {
+    background-color: rgba(1, 138, 190, 1);
+    flex-direction: column;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    gap:20px;
+    padding: 35px 45px;
+    margin-top: 24px;;
+    }
+#mapandcontacts h2 {
+    font-family:"El Messiri", sans-serif;
+    font-size: 24px;
+    line-height: 33.6px;
+}
+#mapandcontacts ul {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    padding: 0;
+}
+#mapandcontacts li {
+    display: flex;
+    gap: 23px;
+    list-style: none;
+}
+#mapandcontacts a {
+    background-color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 9px 15px;
+    color: #018ABE;
+    width: 155px;
+    font-size: 13px;
+}
+.adress::before{
+    content: url(./img/adress.svg);
+}
+.station::before{
+    content: url(./img/metro.svg);
+}
+.recording::before{
+    content: url(./img/calendar.svg);
+}
+footer a {
+    color: white;
+}
+footer p {
+    font-size: 14px;
+}
