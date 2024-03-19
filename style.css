@@ -60,11 +60,11 @@ nav a,
     border-radius: 10px;
 }
 .banner h2::before {
-    content: url(/img/Rectangle\ 3.svg);
+    content: url(./img/Rectangle\ 3.svg);
     margin-right: 66px;
 }
 .banner h2::after {
-    content: url(/img/Rectangle\ 5.svg);
+    content: url(./img/Rectangle\ 5.svg);
     margin-left: 66px;
 }
 .banner h2 {
@@ -109,11 +109,11 @@ h1, h2, h3 {
     align-items: center; 
 }
 .title::before{
-    content: url(/img/Rectangle\ 6.svg);
+    content: url(./img/Rectangle\ 6.svg);
     margin-right: 45px;
 }
 .title::after{
-    content: url(/img/Rectangle\ 7.svg);
+    content: url(./img/Rectangle\ 7.svg);
     margin-left: 45px;
 }
 #seanse h2 {
@@ -157,7 +157,7 @@ h1, h2, h3 {
     grid-area: 1 / 1 / 3 / 2; 
     height: 540px;
     width: 416px;
-    background-image: url(/img/unsplash_TnOyyEtrKd0.svg);
+    background-image: url(./img/unsplash_TnOyyEtrKd0.svg);
     display: flex;
     align-items: end;
     border-radius: 10px;
@@ -166,7 +166,7 @@ h1, h2, h3 {
         grid-area: 1 / 2 / 2 / 3; 
         height: 258px;
         width: 416px;
-        background-image: url(/img/блок.svg);
+        background-image: url(./img/блок.svg);
         display: flex;
     align-items: end;
     border-radius: 10px;
@@ -174,7 +174,7 @@ h1, h2, h3 {
     .block_3 { grid-area: 1 / 3 / 2 / 4; 
         height: 258px;
         width: 416px;
-        background-image: url(/img/блок.svg);
+        background-image: url(./img/блок.svg);
         display: flex;
     align-items: end;
     border-radius: 10px;
@@ -182,7 +182,7 @@ h1, h2, h3 {
     .block_4 { grid-area: 2 / 2 / 3 / 3; 
         height: 258px;
         width: 416px;
-        background-image: url(/img/блок.svg);
+        background-image: url(./img/блок.svg);
         display: flex;
     align-items: end;
     border-radius: 10px;
@@ -190,7 +190,7 @@ h1, h2, h3 {
     .block_5 { grid-area: 2 / 3 / 3 / 4; 
         height: 258px;
         width: 416px;
-        background-image: url(/img/блок.svg);
+        background-image: url(./img/блок.svg);
         display: flex;
     align-items: end;
     border-radius: 10px;
@@ -363,7 +363,7 @@ margin-top: 100px;
     font-weight: 400;
 }
 .price li::before {
-    content: url(/img/Rectangle\ 27.svg);
+    content: url(./img/Rectangle\ 27.svg);
     position: absolute;
     margin-left: -40px;}
 .price span {
